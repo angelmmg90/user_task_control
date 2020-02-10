@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomKOScreen">
+        <attr name="changeColor" format="string"/>
+        <attr name="changeElementToShow" format="string"/>
+        <attr name="status_image_height" format="integer"/>
+        <attr name="status_image_width" format="integer"/>
+        <attr name="src_image_to_load" format="string"/>
+    </declare-styleable>
+
+</resources>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/tvFarmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/black"
+        tools:text="Nombre"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tvFarmCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentEnd="true"
+        tools:text="Category" />
+
+    <TextView
+        android:id="@+id/tvFarmItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvFarmName"
+        tools:text="Item" />
+
+    <TextView
+        android:id="@+id/tvFarmPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvFarmCategory"
+        android:layout_alignParentRight="true"
+        tools:text="Phone" />
+
+</RelativeLayout>

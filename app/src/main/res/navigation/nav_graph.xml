@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.amacdong.usertaskcontrol.ui.features.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/access_system_action"
+            app:destination="@id/userProfileFragment"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/listTasksFragment"
+        android:name="com.amacdong.usertaskcontrol.ui.features.tasksList.allTasks.ListTasksFragment"
+        android:label="Tasks List"
+        tools:layout="@layout/fragment_list_tasks">
+
+        <action
+            android:id="@+id/go_create_new_task_action"
+            app:destination="@id/newTaskFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.amacdong.usertaskcontrol.ui.features.userProfile.UserProfileFragment"
+        android:label="Me"
+        tools:layout="@layout/fragment_user_profile">
+
+        <action
+            android:id="@+id/logout_action"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/farmFragment"
+        android:name="com.amacdong.usertaskcontrol.ui.features.farms.FarmFragment"
+        android:label="Farms List"
+        tools:layout="@layout/fragment_farm" />
+    <fragment
+        android:id="@+id/newTaskFragment"
+        android:name="com.amacdong.usertaskcontrol.ui.features.newTask.NewTaskFragment"
+        android:label="Add New Task"
+        tools:layout="@layout/fragment_new_task">
+
+        <action
+            android:id="@+id/go_task_list_action"
+            app:destination="@id/listTasksFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/completedTasksFragment"
+        android:name="com.amacdong.usertaskcontrol.ui.features.tasksList.completedTasks.CompletedTasksFragment"
+        android:label="Completed Tasks"
+        tools:layout="@layout/fragment_completed_tasks" />
+    <fragment
+        android:id="@+id/pendingTasksFragment"
+        android:name="com.amacdong.usertaskcontrol.ui.features.tasksList.pendingTasks.PendingTasksFragment"
+        android:label="Pending Tasks"
+        tools:layout="@layout/fragment_pending_tasks" />
+</navigation>

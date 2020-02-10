@@ -1,3 +1,63 @@
 <resources>
-    <string name="app_name">UserTaskControl</string>
+    <string name="app_name">User Tasks Control</string>
+
+    <!--LOGIN FRAGMENT-->
+    <string name="edt_employee_id_login">Employee ID</string>
+    <string name="edt_password_login">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="process_login_message">Authenticating…</string>
+    <string name="wrong_credentials_message">Wrong Credentials</string>
+    <string name="error_advice_title">Error</string>
+    <string name="loading_sign_in">Loading...</string>
+
+    <!-- CHOICE FRAGMENT-->
+    <string name="new_task">New Task</string>
+
+    <!--TECHNICAL FRAGMENT-->
+    <string name="tab_completed_tasks">Completed Tasks</string>
+    <string name="tab_pending_tasks">Pending Tasks</string>
+
+    <!--CUSTOM KO SCREEN-->
+    <string name="error_no_network_connection">No Network Connection</string>
+    <string name="error_no_display_requested_data">Cannot display requested information</string>
+
+    <!--BOTTOM NAV MENU (TECHNICAL AND ADMIN)-->
+    <string name="user_profile">Me</string>
+    <string name="pending_tasks">Pending</string>
+    <string name="completed_tasks">Completed</string>
+    <string name="tasks_list">Tasks List</string>
+
+    <!--USER PROFILE FRAGMENT-->
+    <string name="title_toolbar_profile">Me</string>
+    <string name="close_session">Close session</string>
+    <string name="farms">Farms</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="task_prompt">Choose a task type</string>
+    <string name="task_description">Task Description</string>
+    <string name="task_time">Task Time</string>
+    <string name="create_new_task">Create new task</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="task_done">Task Done</string>
+    <string name="undo_task">Undo</string>
+    <string name="error_adding_new_task">Error adding a new task</string>
+    <string name="assigned_to">assigned to</string>
+    <string name="no_user_for_task">There is no user available for that task</string>
+    <string name="check_field_new_task">Check all fields</string>
+    <string name="error_getting_task_message">Error getting tasks</string>
+    <string name="error_connection">Error connection</string>
+    <string name="not_found_farm_name">Not found farm name</string>
+    <string name="access_forbidden">Forbidden</string>
+    <string name="not_user_available_for_task">There is no user available for the task created</string>
+    <string name="not_found_tasks">Not found tasks</string>
+
+    <string-array name="task_types">
+        <item>Reponedor de productos</item>
+        <item>Cobrar</item>
+        <item>Envolver</item>
+        <item>Etc</item>
+    </string-array>
+
 </resources>

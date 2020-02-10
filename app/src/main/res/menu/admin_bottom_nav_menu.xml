@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/userProfileFragment"
+        android:icon="@drawable/ic_account_circle"
+        android:title="@string/user_profile" />
+
+    <item
+        android:id="@id/farmFragment"
+        android:icon="@drawable/ic_flag"
+        android:title="@string/farms" />
+
+    <item
+        android:id="@id/listTasksFragment"
+        android:icon="@drawable/ic_tasks_list"
+        android:title="@string/tasks_list" />
+
+</menu>
